@@ -14,53 +14,91 @@ html, body {
 body {
     font-family: arial, "Helvetica Neue", Helvetica, sans-serif;
     min-width: 1200px;
+    background-color: rgb(243, 237, 230);
 }
 
 .wrapper {
     display: flex;
-    min-height: -100%;
+    min-height: 100%;
     overflow: hidden;
     flex-direction: column;
 }
 
 .container {
-    width: 1200px; /* ОБЫЧНАЯ ВЕРСТКА */
+    width: 1000px; /* ОБЫЧНАЯ ВЕРСТКА */
     margin: 0px auto;
     padding: 0px 15px;
 }
+
+/* ======================== HEADER ======================== */
 
 .header {
     background-color: #5e5373;
 }
 
-.header-row {
+.header__row {
     display: flex;
     justify-content: space-between;
     height: 80px;
-    align-items: center;
+    align-items: center;   
 }
 
 .header__logo {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: #ece89d;
 }
 
-.header-menu {}
-
-.menu {}
-
-
-
 .menu__list{
     display: inline-flex;
+    list-style-type: none;
 }
 
 .menu__link {
     display: flex;
+    padding: 10px;
     margin: 10px;
     background-color: khaki;
-    height: 20px;
-    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    min-width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.link_text {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+a:link {
+    color: rgb(73, 73, 73);
+    text-decoration: none;
+}
+a:visited {color: rgb(73, 73, 73);}
+a:hover {color: #EF7D55;}
+
+/* ======================== MAIN ======================== */
+
+.block {
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+}
+.block__row {
+    display: flex;
+    border: 10px solid #ece89d;
+    margin: 0 0 10px 0;
+    align-items: flex-start;
+}
+.block__column {
+    border: 10px solid #5e5357;
+}
+.block__item {
+    background-color: #18b5a4;
+    padding: 20px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    width: 150px;
 }
