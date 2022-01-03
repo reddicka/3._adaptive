@@ -111,7 +111,7 @@ a:hover {color: #EF7D55;}
     padding: 20px;
     font-size: 30px;
     color: #fff;
-    font-weight: 600;
+    font-weight: 500;
     width: 150px;
 }
 
@@ -168,6 +168,7 @@ a:hover {color: #EF7D55;}
 .ssilki__item {
     font-size: 15px;
     line-height: 1.2em;
+    font-weight: 600;
 
     margin: 0px 55px;
 }
