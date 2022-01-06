@@ -122,12 +122,12 @@ a:hover {color: #EF7D55;}
 }
 .footer__row {
     display: flex;
-    height: 65px;
-    justify-content: center;
+    height: 80px;
+    justify-content: space-between;
     align-items: center;
 }
 .footer__text {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0.3px;
@@ -136,17 +136,17 @@ a:hover {color: #EF7D55;}
 
 
 .ssilki {
-    padding: 10px 30px;
+    padding: 20px 30px;
     margin-bottom: 20px;
 
     background-color: #ffefc3;
     border: rgba(94, 83, 115, .5) solid 1px;
-    border-radius: 5px;
 }
 
 .ssilki__h1 {
+    text-align: center;
     font-size: 30px;
-    color: rgb(53, 47, 65);
+    color: rgb(94, 83, 115);
 }
 
 .ssilki__block {
