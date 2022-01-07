@@ -173,6 +173,20 @@ a:hover {color: #EF7D55;}
     margin: 0px 55px;
 }
 
+.loiki {
+    margin: 50px 0 0 20px;
+    
+}
+
+.like {
+    border: 1px solid rgb(0, 119, 255);
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    padding: 3px;
+    font-weight: 600;
+    color: rgb(0, 119, 255);
+}
+
 img {
     border-radius: 50%;
 }
