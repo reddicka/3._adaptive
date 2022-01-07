@@ -19,7 +19,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 body {
     font-family: arial, "Helvetica Neue", Helvetica, sans-serif;
     min-width: 1200px;
-    background-color: rgb(243, 237, 230);
+    background-color: rgb(244, 234, 255);
 }
 
 .wrapper {
@@ -185,6 +185,12 @@ a:hover {color: #EF7D55;}
     padding: 3px;
     font-weight: 600;
     color: rgb(0, 119, 255);
+}
+
+.like-added {
+    border: 1px solid rgb(255, 255, 255);
+    background: rgb(0, 119, 255);
+    color: rgb(255, 255, 255);
 }
 
 img {

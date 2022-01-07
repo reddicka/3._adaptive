@@ -1,10 +1,15 @@
 let like = document.querySelector('.like');
 let likeCount = document.querySelector('.like-count');
 
-let counter = 0;
 
 like.onclick = function () {
-    counter++;
-    likeCount.textContent = counter;
+    
+    if (like.classList.contains('like-added')) {
+        likeCount.textContent--;
+    } else {
+        likeCount.textContent++;  
+    }
+
+    like.classList.toggle('like-added');
     
 }
