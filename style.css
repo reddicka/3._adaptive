@@ -159,12 +159,19 @@ a:hover {color: #EF7D55;}
     margin: 0px 55px;
 }
 
-.loiki {
+/* ============ КНОПОЧЬКИ ============ */
+
+.bottom-buttons {
     margin: 50px 0 0 20px;
-    
+    display: flex;
+    flex-direction: row;
 }
 
-.like {
+.like + .lomalka-button {
+    margin-left: 50px;
+}
+
+.like, .lomalka-button {
     border: 1px solid rgb(0, 119, 255);
     border-radius: 10px;
     background: rgb(255, 255, 255);
@@ -174,11 +181,30 @@ a:hover {color: #EF7D55;}
     white-space: pre;
 }
 
-.like-added {
+.like--added {
     border: 1px solid rgb(255, 255, 255);
     background: rgb(0, 119, 255);
     color: rgb(255, 255, 255);
 }
+
+.lomalka-button {
+    border: 1px solid rgb(255, 21, 110);
+    color: rgb(255, 21, 110);
+}
+
+.lomalka-button--added {
+    border: 1px solid rgb(255, 255, 255);
+    background: rgb(255, 21, 110);
+    color: rgb(255, 255, 255);
+}
+
+.body-fail {
+    /*position: absolute;
+    left 50%;
+    transform: translateX(-50%);*/
+    font-size: 50px;
+}
+
 
 img {
     border-radius: 50%;
