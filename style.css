@@ -28,26 +28,27 @@ body {
 
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
+    
 }
 
 .container {
-    max-width: 1180px;
+    width: 1180px;
     margin: 0px auto;
-    padding: 0px 15px;
 }
 
 /* ======================== HEADER ======================== */
 
 .header {
     background-color: rgb(94, 83, 115);
+    min-height: 5vh;
 }
 
 .header__row {
     display: flex;
     justify-content: space-between;
-    height: 80px;
-    align-items: center;   
+    min-height: 6.7vh;
+    align-items: center;
 }
 
 .header__logo {
@@ -57,21 +58,30 @@ body {
     background-color: #ece89d;
 }
 
-.menu__list{
-    display: inline-flex;
+.menu__list {
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
 }
 
 .menu__link {
     display: flex;
     padding: 10px;
-    margin: 10px;
+    /*----margin: 10px;*/
     background-color: khaki;
     border-radius: 5px;
     height: 30px;
     width: fit-content;
     justify-content: center;
     align-items: center;
+}
+
+.menu__list li + li{
+    margin-left: 20px;
+}
+
+.menu__link--tut {
+    background-color: rgb(248, 146, 106);
 }
 
 .link_text {
@@ -86,47 +96,23 @@ a:link {
 a:visited {color: rgb(73, 73, 73);}
 a:hover {color: #EF7D55;}
 
+
 /* ======================== MAIN ======================== */
+.main {
+    background-color: #ffefc3;
+    border-left: rgba(94, 83, 115, .5) solid 1px;
+    border-right: rgba(94, 83, 115, .5) solid 1px;
+    min-height: 86.6vh;
+}
+
 
 .content {
     flex: 1 1 auto; /* Чтоб прижало подвал */
 }
 
-.block {
-    text-align: center;
-    background-color: rgb(245, 245, 245);
-}
-.block__row {
-    display: flex;
-    border: 10px solid #ece89d;
-    margin: 0 0 10px 0;
-    align-items: flex-start;
-}
-.block__column {
-    border: 10px solid #5e5357;
-}
-.block__item {
-    background-color: #18b5a4;
-    padding: 20px;
-    font-size: 30px;
-    color: #fff;
-    font-weight: 500;
-    width: 150px;
-}
-
-
-
-
-
-
-
 
 .ssilki {
-    padding: 20px 30px;
-    margin-bottom: 20px;
-
-    background-color: #ffefc3;
-    border: rgba(94, 83, 115, .5) solid 1px;
+    padding: 20px 30px 30px;
 }
 
 .ssilki__h1 {
@@ -162,9 +148,9 @@ a:hover {color: #EF7D55;}
 /* ============ КНОПОЧЬКИ ============ */
 
 .bottom-buttons {
-    margin: 50px 0 0 20px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .like + .lomalka-button {
@@ -198,34 +184,78 @@ a:hover {color: #EF7D55;}
     color: rgb(255, 255, 255);
 }
 
-.body-fail {
-    /*position: absolute;
-    left 50%;
-    transform: translateX(-50%);*/
-    font-size: 50px;
+/* ============ /КНОПОЧЬКИ ============ */
+
+/* ============ После поломания ============ */
+.bidlo {
+    font-size: 150px;
 }
 
-
-img {
-    border-radius: 50%;
+.sad {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 250px;
+    height: 200px;
+    background: rgb(0, 0, 0);
+    position: relative;
 }
 
+.sad::before, .sad::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    background: rgb(255, 255, 255);
+    top: 40px;
+    animation: eye 3s ease-in-out infinite;
+}
 
+.sad::before { left: 50px; }
+.sad::after { right: 25px; }
 
+.rot {
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 130px;
+    width: 75px;
+    height: 10px;
+    background: rgb(255, 255, 255);
+    animation: rot 5s ease-in-out infinite;
+}
+
+@keyframes eye {
+    85% { transform: none; }
+    95% { transform: scaleY(0); }
+}
+
+@keyframes rot {
+    0% { transform: none; }
+    20% { transform: scale(0.5, 5); }
+}
+
+/* ============ /После поломания ============ */
+
+.LOREM {
+    font-size: 25px;
+}
 
 
 
 /* ======================== FOOTER ======================== */
 
 .footer {
-    background-color: #5e5373;
+    background-color: #292929;
+    /* Норм цвета еще 3c3c3c и черный с белым */
 }
+
 .footer__row {
     display: flex;
-    height: 80px;
     justify-content: space-between;
+
+    min-height: 6.7vh;
     align-items: center;
 }
+
 .footer__text {
     color: rgb(255, 255, 255);
     font-size: 18px;
