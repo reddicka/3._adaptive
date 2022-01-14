@@ -262,3 +262,11 @@ a:hover {color: #EF7D55;}
     font-weight: 500;
     letter-spacing: 0.3px;
 }
+
+.cats__text {
+    font-size: 12px;
+}
+
+.cats__text p + p {
+    margin-top: 10px;
+}
