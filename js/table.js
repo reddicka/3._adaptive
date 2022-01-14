@@ -1,12 +1,12 @@
 const inner = document.querySelector('.inner');
-const squareColors = ['#ed220d', '#b542e5', '#0d93ed', '#f2770b', '#8affbc', '#f2ff8a', '#ff38c2', '#e37f35'];
-const BLOCKS = 672;
+const squareColors = ['#4013af, #9ced01, #ff8301, #db0159, #ed220d', '#b542e5', '#0d93ed', '#f2770b', '#8affbc', '#f2ff8a', '#ff38c2', '#e37f35'];
+const BLOCKS = 1332;
 
 for (let i = 0; i < BLOCKS; i++) {
     const square = document.createElement('div');
     square.classList.add('square');
     square.addEventListener('mouseover', () => setColor(square));
-    square.addEventListener('mouseout', () => removeColor(square));
+    //square.addEventListener('mouseout', () => removeColor(square));
     inner.appendChild(square)
 }
 

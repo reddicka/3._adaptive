@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(29, 29, 29);
+
+}
+
+.main, .header {
+    background-color: #292929;
+    border: 0;
+}
+
+.inner {
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 5px;
+}
+
+.square {
+    background-color: #2d2d2d;
+    box-shadow: 0 0 2px #000;
+    height: 25px;
+    width: 25px;
+    margin: 3px;
+    transition: 3s ease;
+}
+.square:hover { transition-duration: 0s;}
